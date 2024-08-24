@@ -1,5 +1,6 @@
+<div class="main container w-[1128px]">
 
-<div class="fixed left-56 top-14 m-1 flex p-1 rounded-md  grid-cols-3 gap-16">
+  <div class="relative left-[225px] top-10 m-1 flex p-1 rounded-md  grid-cols-3 gap-16">
 
     <div class="bg-slate-200 w-80 h-32 m-1 rounded-md flex flex-col p-3 relative">
       <span>In Progress</span>
@@ -10,7 +11,8 @@
         </i>
         Up From Yesterday
       </div>
-      <div class="absolute top-6 right-11 text-4xl bg-orange-300 rounded-2xl w-12 h-12 flex items-center justify-center p-2">
+      <div
+        class="absolute top-6 right-11 text-4xl bg-orange-300 rounded-2xl w-12 h-12 flex items-center justify-center p-2">
         <i class="bi bi-file-earmark-medical text-orange-600"></i>
       </div>
     </div>
@@ -24,7 +26,8 @@
         </i>
         Up From Past Week
       </div>
-      <div class="absolute top-6 right-11 text-4xl bg-rose-200 rounded-2xl w-12 h-12 flex items-center justify-center p-2">
+      <div
+        class="absolute top-6 right-11 text-4xl bg-rose-200 rounded-2xl w-12 h-12 flex items-center justify-center p-2">
         <i class="bi bi-journal-bookmark-fill text-rose-600"></i>
       </div>
     </div>
@@ -38,16 +41,17 @@
         </i>
         Down From Yesterday
       </div>
-      <div class="absolute top-6 right-11 text-4xl bg-blue-200 rounded-2xl w-12 h-12 flex items-center justify-center p-2">
+      <div
+        class="absolute top-6 right-11 text-4xl bg-blue-200 rounded-2xl w-12 h-12 flex items-center justify-center p-2">
         <i class="bi bi-journal-arrow-down text-blue-950"></i>
       </div>
     </div>
   </div>
-
+  
   
   
   <!-- Task Status and AG Grid -->
-  <div class="fixed flex left-56 top-52 m-2 p-1 gap-14 border-b">
+  <div class="relative flex left-56 top-[40px] m-2 p-1 gap-14 border-b">
   
     <div class="bg-slate-100 h-16 p-2 flex items-center justify-between rounded-md  relative" style="width: 525px;">
       <span class="font-bold">Task Status</span>
@@ -59,137 +63,140 @@
           <option value="ye">Yesterday</option>
         </select>
       </div>
-
-      <!-- <div echarts [options]="donutChartOptions" class="echart bg-slate-500 h-64 absolute top-16 left-0 my-2" style="width:525px;"></div> -->
-
-      <div class="bg-slate-500 h-64 absolute top-16 left-0 my-2 rounded-md " style="width: 525px;">
-      </div> 
-
-    <!-- <div echarts [options]="chartOptions1" class="echart bg-slate-500 h-64 absolute top-16 left-0 my-2" style="width:525px;"></div> -->
-   
-    </div>
-
-                
-      <div class="bg-slate-100 h-16 p-2 flex items-center justify-between rounded-md relative" style="width: 525px;">
-        <span class="font-bold">Statistics</span>
-        <div class="flex items-center space-x-2">
-          <select class="bg-white rounded-md px-2 py-1 border border-gray-300">
-            <option value="to">Today</option>
-            <option value="tm">Tomorrow</option>
-            <option value="ye">Yesterday</option>
-          </select>
-        </div>
-
-        <!-- <div echarts [options]="donutChartOptions" class="echart bg-slate-500 h-64 absolute top-16 left-0 my-2" style="width:525px;"></div> -->
   
-        <!-- <div echarts [options]="chartOptions2" class=" EChartsO bg-slate-500 h-64 absolute top-16 left-0 my-2" style="width: 525px;"></div> -->
-    
-        <div class="bg-slate-700 h-64 absolute top-16 left-1 my-2 rounded-md " style="width: 525px;">
-        </div> 
-          
+      <!-- <div echarts [options]="donutChartOptions" class="echart bg-slate-500 h-64 absolute top-16 left-0 my-2" style="width:525px;"></div> -->
+  
+      <div class="bg-slate-500 h-64 absolute top-16 left-0 my-2 rounded-md " style="width: 525px;">
+      </div>
+
+  
+      <!-- <div echarts [options]="chartOptions1" class="echart bg-slate-500 h-64 absolute top-16 left-0 my-2" style="width:525px;"></div> -->
+  
+    </div>
+  
+  
+    <div class="bg-slate-100 h-16 p-2 flex items-center justify-between rounded-md relative" style="width: 525px;">
+      <span class="font-bold">Statistics</span>
+      <div class="flex items-center space-x-2">
+        <select class="bg-white rounded-md px-2 py-1 border border-gray-300">
+          <option value="to">Today</option>
+          <option value="tm">Tomorrow</option>
+          <option value="ye">Yesterday</option>
+        </select>
+      </div>
+  
+
+     
+
+      <!-- <div echarts [options]="pieChartOptions" class=" h-64 absolute top-16 left-1 my-2 rounded-md " style="width: 525px;">
+      </div> -->
+  
+      <!-- <div echarts [options]="donutChartOptions" class="echart bg-slate-500 h-64 absolute top-16 left-0 my-2" style="width:525px;"></div> -->
+  
+      <!-- <div echarts [options]="chartOptions2" class=" EChartsO bg-slate-500 h-64 absolute top-16 left-0 my-2" style="width: 525px;"></div> -->
+  
+      <div class="bg-slate-700 h-64 absolute top-16 left-1 my-2 rounded-md " style="width: 525px;">
+      </div>
+  
+  
+    </div>
+  </div>
+  
+  <!-- chart section end -->
+  
+  <div class="flex flex-col p-2 relative left-56  my-6 bg-white m-3 rounded-md "
+    style="width: 1105px; top: 280px; height: 470px;">
+    <div>
+      <span class="text-lg font-semibold">Agent Task</span>
+    </div>
+    <div class="flex items-center justify-between mt-2">
+      <input type="text" placeholder="Search for Agents" class="px-2 py-1 w-96 h-8  border border-gray-300 rounded-md ">
+      <div class="flex space-x-4">
+        <button
+          class="px-2 py-1 h-8 text-center text-black rounded-md hover:bg-[rgb(157,136,109)] border border-gray-300 hover:text-white">Filter</button>
+  
+        <button
+          class="px-2 py-1 h-8 text-center text-black rounded-md hover:hover:bg-[rgb(157,136,109)] border border-gray-300 hover:text-white">Import
+          Leads</button>
+  
+        <button
+          class="px-2 py-1 h-8 text-center text-black rounded-md hover:bg-[rgb(157,136,109)] hover:text-white border border-gray-300">Create
+          Leads</button>
       </div>
     </div>
-
-    <!-- chart section end -->
-
-    <div class="flex flex-col p-2 fixed left-56  my-6" style="width: 1118px; top: 530px">
-      <div>
-        <span class="text-lg font-semibold">Agent Task</span>
-      </div>
-      <div class="flex items-center justify-between mt-2">
-        <input type="text" placeholder="Search for Agents" class="px-2 py-1 w-96 h-8  border border-gray-300 rounded-md ">
-        <div class="flex space-x-4">
-          <button class="px-2 py-1 h-8 text-center text-black rounded-md hover:bg-[rgb(157,136,109)] border border-gray-300 hover:text-white">Filter</button>
-
-          <button class="px-2 py-1 h-8 text-center text-black rounded-md hover:hover:bg-[rgb(157,136,109)] border border-gray-300 hover:text-white">Import Leads</button>
-
-          <button class="px-2 py-1 h-8 text-center text-black rounded-md hover:bg-[rgb(157,136,109)] hover:text-white border border-gray-300">Create Leads</button>
-        </div>
-      </div>
-    </div>
-
-    <div class="mat-elevation-z8 relative left-56 bg-white border-t-slate-600" style="width: 1115px; top: 650px;">
-      <table mat-table [dataSource]="dataSource" class="border-lime-50">
-    
+  
+  
+  
+  
+    <div class="mat-elevation-z8  relative left=[200px]  bg-white border-t-slate-600" style="width: 1090px; top: 20px;">
+      <table mat-table [dataSource]="dataSource" class="border-gray-950">
+  
         <!-- Position Column -->
         <ng-container matColumnDef="position">
-          <th mat-header-cell *matHeaderCellDef class="w-1 text-xs !bg-blue-300 text-black"> LEAD NUMBER </th>
-          <td mat-cell *matCellDef="let element" class="w-2/12 text-sm"> {{element.position}} </td>
+          <th mat-header-cell *matHeaderCellDef class="w-1 text-[11px] !bg-blue-300 text-black"> LEAD NUMBER </th>
+          <td mat-cell *matCellDef="let element" class="w-2/12 text-[10px]"> {{element.position}} </td>
         </ng-container>
-    
+  
         <!-- Name Column -->
         <ng-container matColumnDef="name">
-          <th mat-header-cell *matHeaderCellDef class="w-1 text-xs !bg-blue-300 text-black"> LEAD NAME </th>
-          <td mat-cell *matCellDef="let element" class="w-2/6 text-sm"> {{element.name}} </td>
+          <th mat-header-cell *matHeaderCellDef class="w-1 text-[11px] !bg-blue-300 text-black"> LEAD NAME </th>
+          <td mat-cell *matCellDef="let element" class="w-2/6 text-[11px]"> {{element.name}} </td>
         </ng-container>
-    
+  
         <!-- Type Column -->
         <ng-container matColumnDef="type">
-          <th mat-header-cell *matHeaderCellDef class="w-1 text-xs !bg-blue-300 text-black"> LEAD TYPE </th>
-          <td mat-cell *matCellDef="let element" class="w-2/6 text-sm"> {{element.type}} </td>
+          <th mat-header-cell *matHeaderCellDef class="w-1 text-[11px] !bg-blue-300 text-black"> LEAD TYPE </th>
+          <td mat-cell *matCellDef="let element" class="w-2/6 text-[11px]"> {{element.type}} </td>
         </ng-container>
-    
+  
         <!-- Company Column -->
         <ng-container matColumnDef="company">
-          <th mat-header-cell *matHeaderCellDef class="w-1 text-xs !bg-blue-300 text-black"> COMPANY </th>
-          <td mat-cell *matCellDef="let element" class="text-sm"> {{element.company}} </td>
+          <th mat-header-cell *matHeaderCellDef class="w-1 text-[11px] !bg-blue-300 text-black"> COMPANY </th>
+          <td mat-cell *matCellDef="let element" class="text-[11px]"> {{element.company}} </td>
         </ng-container>
-    
+  
         <!-- Email Column -->
         <ng-container matColumnDef="email">
-          <th mat-header-cell *matHeaderCellDef class="w-1 text-xs !bg-blue-300 text-black"> EMAIL </th>
-          <td mat-cell *matCellDef="let element" class="text-sm"> {{element.email}} </td>
+          <th mat-header-cell *matHeaderCellDef class="w-1 text-[11px] !bg-blue-300 text-black"> EMAIL </th>
+          <td mat-cell *matCellDef="let element" class="text-[11px]"> {{element.email}} </td>
         </ng-container>
-    
+  
         <!-- Owner Column -->
         <ng-container matColumnDef="owner">
-          <th mat-header-cell *matHeaderCellDef class="w-1 text-xs !bg-blue-300 text-black"> LEAD OWNER </th>
-          <td mat-cell *matCellDef="let element" class="text-sm"> {{element.owner}} </td>
+          <th mat-header-cell *matHeaderCellDef class="w-1 text-[11px] !bg-blue-300 text-black"> LEAD OWNER </th>
+          <td mat-cell *matCellDef="let element" class="text-[11px]"> {{element.owner}} </td>
         </ng-container>
-    
+  
         <!-- Source Column -->
         <ng-container matColumnDef="source">
-          <th mat-header-cell *matHeaderCellDef class="w-1 text-xs !bg-blue-300 text-black"> LEAD SOURCE </th>
-          <td mat-cell *matCellDef="let element" class="text-sm"> {{element.source}} </td>
+          <th mat-header-cell *matHeaderCellDef class="w-1 text-[11px] !bg-blue-300 text-black"> LEAD SOURCE </th>
+          <td mat-cell *matCellDef="let element" class="text-[11px]"> {{element.source}} </td>
         </ng-container>
-    
+  
         <!-- Status Column -->
         <ng-container matColumnDef="status">
-          <th mat-header-cell *matHeaderCellDef class="w-1 text-xs !bg-blue-300 text-black"> LEAD STATUS </th>
-          <td mat-cell *matCellDef="let element" class="text-sm"> {{element.status}} </td>
+          <th mat-header-cell *matHeaderCellDef class="w-1 text-[11px] !bg-blue-300 text-black"> LEAD STATUS </th>
+          <td mat-cell *matCellDef="let element" class="text-[11px]"> {{element.status}} </td>
         </ng-container>
-    
+  
         <!-- Action Column -->
         <ng-container matColumnDef="action" class="">
-          <th mat-header-cell *matHeaderCellDef class="w-1 text-xs !bg-blue-300 text-black"> ACTION </th>
-          <td mat-cell *matCellDef="let element" class="text-sm"> {{element.action}} </td>
+          <th mat-header-cell *matHeaderCellDef class="w-1 text-[11px] !bg-blue-300 text-black"> ACTION </th>
+          <td mat-cell *matCellDef="let element" class="text-[11px]"> {{element.action}} </td>
         </ng-container>
-    
-        <tr mat-header-row *matHeaderRowDef="displayedColumns" class="bg-orange-700"></tr>
+  
+        <tr mat-header-row *matHeaderRowDef="displayedColumns" class="bg-orange-700 h-1"></tr>
         <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
       </table>
-    
-      <mat-paginator [pageSizeOptions]="[0, 5, 10]"
-                     showFirstLastButtons
-                     aria-label="Select page of periodic elements">
+  
+      <mat-paginator [pageSizeOptions]="[0, 5, 10]" showFirstLastButtons aria-label="Select page of periodic elements">
       </mat-paginator>
     </div>
-    
-      
-    
-    
-
-   
-    
   
-    
-  
-  
+  </div>
 
 
+<!-- code end here -->
+</div>
 
-  
 
-
-  
-  
