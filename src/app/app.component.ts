@@ -1,17 +1,15 @@
 import { Component } from '@angular/core';
-// import { RouterOutlet } from '@angular/router';
 import { NavbarComponent } from "./navbar/navbar.component";
 import { SidenavComponent } from "./sidenav/sidenav.component";
-import { PageoneComponent } from "./pageone/pageone.component";
-
-
-
+// import { PageoneComponent } from "./pageone/pageone.component";
+// import { PagetwoComponent } from "./pagetwo/pagetwo.component";
+import { RouterModule, RouterOutlet } from '@angular/router';
 
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [NavbarComponent, SidenavComponent, PageoneComponent],
+  imports: [NavbarComponent, SidenavComponent,RouterOutlet,RouterModule],
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']
 })
