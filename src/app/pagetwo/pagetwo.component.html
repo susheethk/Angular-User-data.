@@ -1,0 +1,75 @@
+<div class="flex flex-col p-2 relative left-56  my-6 bg-slate-200 m-3 rounded-md"  style="width: 1105px; top: 30px; height: 575px;">
+
+    <div>
+        <span class="text-lg font-semibold">Activity/Tasks</span>
+      </div>
+      <div class="flex items-center justify-between mt-2">
+        <div class="flex items-center">
+    
+            <input type="text" placeholder="Search for Agents" class="px-1 py-1 w-80 h-8  border border-gray-300 rounded-md mx-4">
+    
+            <button class="px-2 py-1 h-8 text-center text-black rounded-md hover:bg-[rgb(157,136,109)] border border-gray-300 hover:text-white">Filter Options<i class="bi bi-funnel px-1"></i></button>
+    
+        </div>
+        <div class="flex space-x-4">
+          <button
+            class="px-1 py-1 h-8 text-center text-black rounded-md hover:bg-[rgb(157,136,109)] border border-gray-300 hover:text-white"><i class="bi bi-plus"></i>Upload Activities</button>
+    
+          <button
+            class="px-1 py-1 h-8 text-center text-black rounded-md hover:hover:bg-[rgb(157,136,109)] border border-gray-300 hover:text-white"><i class="bi bi-plus px-1"></i>Create Bulk Task</button>
+    
+          <button
+            class="px-1 py-1 h-8 text-center text-black rounded-md hover:bg-[rgb(157,136,109)] hover:text-white border border-gray-300"><i class="bi bi-plus px-1"></i>Create
+            Activity</button>
+        </div>
+      </div>
+    
+    
+      <div class="mat-elevation-z8  relative left=[200px]  bg-white border-t-slate-600" style="width: 1090px; top: 20px;">
+        <table mat-table [dataSource]="dataSource" class="border-gray-950">
+    
+          <!-- Position Column -->
+          <ng-container matColumnDef="position">
+            <th mat-header-cell *matHeaderCellDef class="w-1 text-[11px] !bg-blue-300 text-black"> LEAD I'd </th>
+            <td mat-cell *matCellDef="let element" class="w-2/12 text-[10px]"> {{element.position}} </td>
+          </ng-container>
+    
+          <!-- Name Column -->
+          <ng-container matColumnDef="name">
+            <th mat-header-cell *matHeaderCellDef class="w-1 text-[11px] !bg-blue-300 text-black"> LEAD TYPE </th>
+            <td mat-cell *matCellDef="let element" class="w-2/6 text-[11px]"> {{element.name}} </td>
+          </ng-container>
+    
+          <!-- Type Column -->
+          <ng-container matColumnDef="type">
+            <th mat-header-cell *matHeaderCellDef class="w-1 text-[11px] !bg-blue-300 text-black">SUBJECT</th>
+            <td mat-cell *matCellDef="let element" class="w-2/6 text-[11px]"> {{element.type}} </td>
+          </ng-container>
+    
+          <!-- Company Column -->
+          <ng-container matColumnDef="company">
+            <th mat-header-cell *matHeaderCellDef class="w-1 text-[11px] !bg-blue-300 text-black">DUE DATE</th>
+            <td mat-cell *matCellDef="let element" class="text-[11px]"> {{element.company}} </td>
+          </ng-container>
+    
+          <!-- Email Column -->
+          <ng-container matColumnDef="email">
+            <th mat-header-cell *matHeaderCellDef class="w-1 text-[11px] !bg-blue-300 text-black"> FOLLOW UP </th>
+            <td mat-cell *matCellDef="let element" class="text-[11px]"> {{element.email}} </td>
+          </ng-container>
+    
+          <!-- Owner Column -->
+          <ng-container matColumnDef="owner">
+            <th mat-header-cell *matHeaderCellDef class="w-1 text-[11px] !bg-blue-300 text-black">STATUS </th>
+            <td mat-cell *matCellDef="let element" class="text-[11px]"> {{element.owner}} </td>
+          </ng-container>
+    
+          <tr mat-header-row *matHeaderRowDef="displayedColumns" class="bg-orange-700 h-1"></tr>
+          <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+        </table>
+    
+        <mat-paginator [pageSizeOptions]="[0, 5, 10]" showFirstLastButtons aria-label="Select page of periodic elements">
+        </mat-paginator>
+      </div>
+
+</div>
