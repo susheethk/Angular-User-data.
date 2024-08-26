@@ -2,7 +2,7 @@
 
   <div class="relative left-[225px] top-10 m-1 flex p-1 rounded-md  grid-cols-3 gap-16">
 
-    <div class="bg-slate-200 w-80 h-32 m-1 rounded-md flex flex-col p-3 relative">
+    <div class="bg-white w-80 h-32 m-1 rounded-md flex flex-col p-3 relative" style="box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.24);">
       <span>In Progress</span>
       <span class="text-3xl font-semibold py-3">150</span>
       <div>
@@ -12,12 +12,12 @@
         Up From Yesterday
       </div>
       <div
-        class="absolute top-6 right-11 text-4xl bg-orange-300 rounded-2xl w-12 h-12 flex items-center justify-center p-2">
+        class="absolute top-6 right-11 text-4xl bg-orange-200 rounded-2xl w-12 h-12 flex items-center justify-center p-2">
         <i class="bi bi-file-earmark-medical text-orange-600"></i>
       </div>
     </div>
   
-    <div class="bg-slate-200 w-80 h-32 m-1 rounded-md flex flex-col p-3 relative">
+    <div class="bg-white w-80 h-32 m-1 rounded-md flex flex-col p-3 relative" style="box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.24);">
       <span>Won</span>
       <span class="text-3xl font-semibold py-3">120</span>
       <div>
@@ -32,7 +32,7 @@
       </div>
     </div>
   
-    <div class="bg-slate-200 w-80 h-32 m-1 rounded-md flex flex-col p-3 relative">
+    <div class="bg-white w-80 h-32 m-1 rounded-md flex flex-col p-3 relative" style="box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.24);">
       <span>Disqualified</span>
       <span class="text-3xl font-semibold py-3">30</span>
       <div>
@@ -51,12 +51,12 @@
   
   
   <!-- Task Status and AG Grid -->
-  <div class="relative flex left-56 top-[40px] m-2 p-1 gap-14 border-b">
+  <div class="relative flex left-56 top-[40px] m-2 p-1 gap-14 border-b bg-white h-[340px] rounded-md" style="box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.24);">
   
-    <div class="bg-slate-100 h-16 p-2 flex items-center justify-between rounded-md  relative" style="width: 525px;">
+    <div class="bg-white h-16 p-2 flex items-center justify-between rounded-md  relative" style="width: 520px;">
       <span class="font-bold">Task Status</span>
       <div class="flex items-center space-x-2">
-        <button class="bg-[rgb(157,136,109)] rounded-md px-2 py-1">Create a New Task</button>
+        <button class=" text-black hover:bg-[rgb(157,136,109)] hover:text-white border border-gray-300 rounded-md px-2 py-1"><i class="bi bi-plus"></i>Create a New Task</button>
         <select class="bg-white rounded-md px-2 py-1 border border-gray-300">
           <option value="to">Today</option>
           <option value="tm">Tomorrow</option>
@@ -66,7 +66,7 @@
   
       <!-- <div echarts [options]="donutChartOptions" class="echart bg-slate-500 h-64 absolute top-16 left-0 my-2" style="width:525px;"></div> -->
   
-      <div class="bg-slate-500 h-64 absolute top-16 left-0 my-2 rounded-md " style="width: 525px;">
+      <div class="bg-white h-64 absolute top-16 left-0 my-2 rounded-md "style="width: 520px; box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.24);">
       </div>
 
   
@@ -75,7 +75,7 @@
     </div>
   
   
-    <div class="bg-slate-100 h-16 p-2 flex items-center justify-between rounded-md relative" style="width: 525px;">
+    <div class="bg-white h-16 p-2 flex items-center justify-between rounded-md relative" style="width: 520px;">
       <span class="font-bold">Statistics</span>
       <div class="flex items-center space-x-2">
         <select class="bg-white rounded-md px-2 py-1 border border-gray-300">
@@ -84,9 +84,6 @@
           <option value="ye">Yesterday</option>
         </select>
       </div>
-  
-
-     
 
       <!-- <div echarts [options]="pieChartOptions" class=" h-64 absolute top-16 left-1 my-2 rounded-md " style="width: 525px;">
       </div> -->
@@ -95,17 +92,15 @@
   
       <!-- <div echarts [options]="chartOptions2" class=" EChartsO bg-slate-500 h-64 absolute top-16 left-0 my-2" style="width: 525px;"></div> -->
   
-      <div class="bg-slate-700 h-64 absolute top-16 left-1 my-2 rounded-md " style="width: 525px;">
+      <div class="bg-white h-64 absolute top-16 left-0 my-2 rounded-md "style="width: 520px; box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.24);">
       </div>
-  
   
     </div>
   </div>
   
   <!-- chart section end -->
   
-  <div class="flex flex-col p-2 relative left-56  my-6 bg-white m-3 rounded-md "
-    style="width: 1105px; top: 280px; height: 470px;">
+  <div class="flex flex-col p-2 relative left-56  my-6 bg-white m-3 rounded-md "style="box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.24); width: 1105px; top: 30px; height: 470px">
     <div>
       <span class="text-lg font-semibold">Agent Task</span>
     </div>
@@ -113,14 +108,14 @@
       <input type="text" placeholder="Search for Agents" class="px-2 py-1 w-96 h-8  border border-gray-300 rounded-md ">
       <div class="flex space-x-4">
         <button
-          class="px-2 py-1 h-8 text-center text-black rounded-md hover:bg-[rgb(157,136,109)] border border-gray-300 hover:text-white">Filter</button>
+          class="px-2 py-1 h-8 text-center text-[rgb(157,136,109)] rounded-md hover:bg-[rgb(157,136,109)] border border-gray-300 hover:text-white"><i class="bi bi-funnel px-1"></i>Filter</button>
   
         <button
-          class="px-2 py-1 h-8 text-center text-black rounded-md hover:hover:bg-[rgb(157,136,109)] border border-gray-300 hover:text-white">Import
+          class="px-2 py-1 h-8 text-center text-[rgb(157,136,109)] rounded-md hover:hover:bg-[rgb(157,136,109)] border border-gray-300 hover:text-white"><i class="bi bi-download px-1"></i>Import
           Leads</button>
   
         <button
-          class="px-2 py-1 h-8 text-center text-black rounded-md hover:bg-[rgb(157,136,109)] hover:text-white border border-gray-300">Create
+          class="px-2 py-1 h-8 text-center text-[rgb(157,136,109)] rounded-md hover:bg-[rgb(157,136,109)] hover:text-white border border-gray-300"><i class="bi bi-plus"></i>Create
           Leads</button>
       </div>
     </div>
@@ -130,55 +125,55 @@
   
         <!-- Position Column -->
         <ng-container matColumnDef="position">
-          <th mat-header-cell *matHeaderCellDef class="w-1 text-[11px] !bg-blue-300 text-black"> LEAD NUMBER </th>
+          <th mat-header-cell *matHeaderCellDef class="w-1 text-[11px] !bg-blue-100 text-black"> LEAD NUMBER </th>
           <td mat-cell *matCellDef="let element" class="w-2/12 text-[10px]"> {{element.position}} </td>
         </ng-container>
   
         <!-- Name Column -->
         <ng-container matColumnDef="name">
-          <th mat-header-cell *matHeaderCellDef class="w-1 text-[11px] !bg-blue-300 text-black"> LEAD NAME </th>
+          <th mat-header-cell *matHeaderCellDef class="w-1 text-[11px] !bg-blue-100 text-black"> LEAD NAME </th>
           <td mat-cell *matCellDef="let element" class="w-2/6 text-[11px]"> {{element.name}} </td>
         </ng-container>
   
         <!-- Type Column -->
         <ng-container matColumnDef="type">
-          <th mat-header-cell *matHeaderCellDef class="w-1 text-[11px] !bg-blue-300 text-black"> LEAD TYPE </th>
+          <th mat-header-cell *matHeaderCellDef class="w-1 text-[11px] !bg-blue-100 text-black"> LEAD TYPE </th>
           <td mat-cell *matCellDef="let element" class="w-2/6 text-[11px]"> {{element.type}} </td>
         </ng-container>
   
         <!-- Company Column -->
         <ng-container matColumnDef="company">
-          <th mat-header-cell *matHeaderCellDef class="w-1 text-[11px] !bg-blue-300 text-black"> COMPANY </th>
+          <th mat-header-cell *matHeaderCellDef class="w-1 text-[11px] !bg-blue-100 text-black"> COMPANY </th>
           <td mat-cell *matCellDef="let element" class="text-[11px]"> {{element.company}} </td>
         </ng-container>
   
         <!-- Email Column -->
         <ng-container matColumnDef="email">
-          <th mat-header-cell *matHeaderCellDef class="w-1 text-[11px] !bg-blue-300 text-black"> EMAIL </th>
+          <th mat-header-cell *matHeaderCellDef class="w-1 text-[11px] !bg-blue-100 text-black"> EMAIL </th>
           <td mat-cell *matCellDef="let element" class="text-[11px]"> {{element.email}} </td>
         </ng-container>
   
         <!-- Owner Column -->
         <ng-container matColumnDef="owner">
-          <th mat-header-cell *matHeaderCellDef class="w-1 text-[11px] !bg-blue-300 text-black"> LEAD OWNER </th>
+          <th mat-header-cell *matHeaderCellDef class="w-1 text-[11px] !bg-blue-100 text-black"> LEAD OWNER </th>
           <td mat-cell *matCellDef="let element" class="text-[11px]"> {{element.owner}} </td>
         </ng-container>
   
         <!-- Source Column -->
         <ng-container matColumnDef="source">
-          <th mat-header-cell *matHeaderCellDef class="w-1 text-[11px] !bg-blue-300 text-black"> LEAD SOURCE </th>
+          <th mat-header-cell *matHeaderCellDef class="w-1 text-[11px] !bg-blue-100 text-black"> LEAD SOURCE </th>
           <td mat-cell *matCellDef="let element" class="text-[11px]"> {{element.source}} </td>
         </ng-container>
   
         <!-- Status Column -->
         <ng-container matColumnDef="status">
-          <th mat-header-cell *matHeaderCellDef class="w-1 text-[11px] !bg-blue-300 text-black"> LEAD STATUS </th>
+          <th mat-header-cell *matHeaderCellDef class="w-1 text-[11px] !bg-blue-100 text-black"> LEAD STATUS </th>
           <td mat-cell *matCellDef="let element" class="text-[11px]"> {{element.status}} </td>
         </ng-container>
   
         <!-- Action Column -->
         <ng-container matColumnDef="action" class="">
-          <th mat-header-cell *matHeaderCellDef class="w-1 text-[11px] !bg-blue-300 text-black"> ACTION </th>
+          <th mat-header-cell *matHeaderCellDef class="w-1 text-[11px] !bg-blue-100 text-black"> ACTION </th>
           <td mat-cell *matCellDef="let element" class="text-[11px]"> {{element.action}} </td>
         </ng-container>
   
