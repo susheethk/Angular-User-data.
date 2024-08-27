@@ -4,18 +4,20 @@ import { NgxEchartsModule } from 'ngx-echarts';
 import { CommonModule } from '@angular/common';
 import { MatPaginator, MatPaginatorModule } from '@angular/material/paginator';
 import { MatTableDataSource, MatTableModule } from '@angular/material/table';
-// import { AgCharts } from "ag-charts-angular";
+import { FormsModule } from '@angular/forms';
+import { MatCheckboxModule, MatCheckboxChange } from '@angular/material/checkbox';
 
 @Component({
   selector: 'app-pageone',
   standalone: true,
-  imports: [NgxEchartsModule, CommonModule, MatTableModule, MatPaginatorModule],
+  imports: [NgxEchartsModule, CommonModule, MatTableModule, MatPaginatorModule, FormsModule, MatCheckboxModule],
   templateUrl: './pageone.component.html',
   styleUrls: ['./pageone.component.css']
 })
 export class PageoneComponent implements AfterViewInit {
   displayedColumns: string[] = ['position', 'name', 'type', 'company','email','owner','source','status','action'];
   dataSource = new MatTableDataSource<PeriodicElement>(ELEMENT_DATA);
+  selectedElements: { [key: number]: boolean } = {}; 
 
   @ViewChild(MatPaginator) paginator!: MatPaginator;
 
@@ -86,6 +88,17 @@ export class PageoneComponent implements AfterViewInit {
       },
     ],
   };
+
+  toggleAll(event: MatCheckboxChange) {
+    const checked = event.checked;
+    this.dataSource.data.forEach(element => {
+      this.selectedElements[element.position] = checked;
+    });
+  }
+
+toggleElement(element: PeriodicElement) {
+  this.selectedElements[element.position] = !this.selectedElements[element.position];
+}
 }
 
 export interface PeriodicElement {
